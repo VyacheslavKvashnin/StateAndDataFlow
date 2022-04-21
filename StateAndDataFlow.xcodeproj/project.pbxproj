@@ -66,8 +66,8 @@
 				BD9849472810821A00DFC5C8 /* LoginView.swift */,
 				BD984949281087BB00DFC5C8 /* ButtonView.swift */,
 				BD5848422811C01D0007E4BA /* TimerButtonView.swift */,
-				BD9849432810808100DFC5C8 /* StorageManager.swift */,
 				BD5848402811AF460007E4BA /* TimeCounter.swift */,
+				BD9849432810808100DFC5C8 /* StorageManager.swift */,
 				BD98493928107FF600DFC5C8 /* Assets.xcassets */,
 				BD98493B28107FF600DFC5C8 /* Preview Content */,
 			);

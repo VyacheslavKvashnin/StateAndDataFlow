@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct StateAndDataFlowApp: App {
-    @StateObject var storageManager = StorageManager()
+    @StateObject private var storageManager = StorageManager()
     
     var body: some Scene {
         WindowGroup {
