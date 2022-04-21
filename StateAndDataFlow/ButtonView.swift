@@ -14,14 +14,16 @@ struct ButtonView: View {
     let present: Bool
     
     var body: some View {
-        Button {
-            isPresented = present
-        } label: {
+        Button (action: { isPresented = present }) {
             HStack {
                 Image(systemName: "checkmark.circle")
                 Text(titleButton)
-                    .font(.body)
             }
+            .padding()
+            .font(.body)
+            .foregroundColor(.white)
+            .background(Color.purple)
+            .cornerRadius(15)
         }
     }
 }

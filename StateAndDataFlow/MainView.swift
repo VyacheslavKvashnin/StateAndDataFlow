@@ -9,15 +9,27 @@ import SwiftUI
 
 struct MainView: View {
     @EnvironmentObject var storageManager: StorageManager
+    @StateObject private var timeCounter = TimeCounter()
     
     var body: some View {
-        VStack {
+        VStack(spacing: 100) {
             Text("Welcome, \(storageManager.userName)")
                 .font(.title)
                 .padding()
             
+            Spacer()
+            
+            Text("\(timeCounter.count)")
+                .font(.largeTitle)
+                .bold()
+            
+            TimerButtonView(timeCounter: timeCounter)
+            
+            Spacer()
+            
             ButtonView(titleButton: "Log Out", present: false)
         }
+        .padding(30)
     }
 }
 
