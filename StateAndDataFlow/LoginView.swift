@@ -9,7 +9,6 @@ import SwiftUI
 
 struct LoginView: View {
     @StateObject private var storageManager = StorageManager()
-    @State private var showAlert = false
     
     var body: some View {
         VStack(spacing: 30) {
@@ -23,12 +22,7 @@ struct LoginView: View {
             
             ButtonView(titleButton: "Log In", present: true)
                 .disabled(storageManager.userName.count <= 2 ? true : false)
-                .onTapGesture {
-                    if storageManager.userName.count <= 2 {
-                        showAlert.toggle()
-                    }
-                }
-                .alert("Enter three or more characters", isPresented: $showAlert) {}
+               
         }
         .padding()
         .onAppear {

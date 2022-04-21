@@ -19,11 +19,6 @@ struct ButtonView: View {
                 Image(systemName: "checkmark.circle")
                 Text(titleButton)
             }
-            .padding()
-            .font(.body)
-            .foregroundColor(.white)
-            .background(Color.purple)
-            .cornerRadius(15)
         }
     }
 }
