@@ -18,7 +18,7 @@ struct LoginView: View {
                     .multilineTextAlignment(.center)
                 
                 Text("\(storageManager.userName.count)")
-                    .foregroundColor(storageManager.userName.count <= 2 ? .black : .green)
+                    .foregroundColor(storageManager.userName.count <= 2 ? .red : .green)
             }
             
             ButtonView(titleButton: "Log In", present: true)
