@@ -8,21 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		BD98493628107FF400DFC5C8 /* StateAndDataFlowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD98493528107FF400DFC5C8 /* StateAndDataFlowApp.swift */; };
-		BD98493828107FF400DFC5C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD98493728107FF400DFC5C8 /* ContentView.swift */; };
+		BD98493828107FF400DFC5C8 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD98493728107FF400DFC5C8 /* MainView.swift */; };
 		BD98493A28107FF600DFC5C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD98493928107FF600DFC5C8 /* Assets.xcassets */; };
 		BD98493D28107FF600DFC5C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD98493C28107FF600DFC5C8 /* Preview Assets.xcassets */; };
-		BD9849442810808100DFC5C8 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9849432810808100DFC5C8 /* UserManager.swift */; };
-		BD9849462810809B00DFC5C8 /* StoregeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9849452810809B00DFC5C8 /* StoregeManager.swift */; };
+		BD9849442810808100DFC5C8 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9849432810808100DFC5C8 /* StorageManager.swift */; };
+		BD9849462810809B00DFC5C8 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9849452810809B00DFC5C8 /* UserManager.swift */; };
+		BD9849482810821A00DFC5C8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9849472810821A00DFC5C8 /* LoginView.swift */; };
+		BD98494A281087BB00DFC5C8 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD984949281087BB00DFC5C8 /* ButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BD98493228107FF400DFC5C8 /* StateAndDataFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StateAndDataFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD98493528107FF400DFC5C8 /* StateAndDataFlowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateAndDataFlowApp.swift; sourceTree = "<group>"; };
-		BD98493728107FF400DFC5C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BD98493728107FF400DFC5C8 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		BD98493928107FF600DFC5C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD98493C28107FF600DFC5C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		BD9849432810808100DFC5C8 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
-		BD9849452810809B00DFC5C8 /* StoregeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoregeManager.swift; sourceTree = "<group>"; };
+		BD9849432810808100DFC5C8 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		BD9849452810809B00DFC5C8 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		BD9849472810821A00DFC5C8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		BD984949281087BB00DFC5C8 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +60,11 @@
 			isa = PBXGroup;
 			children = (
 				BD98493528107FF400DFC5C8 /* StateAndDataFlowApp.swift */,
-				BD98493728107FF400DFC5C8 /* ContentView.swift */,
-				BD9849432810808100DFC5C8 /* UserManager.swift */,
-				BD9849452810809B00DFC5C8 /* StoregeManager.swift */,
+				BD98493728107FF400DFC5C8 /* MainView.swift */,
+				BD9849472810821A00DFC5C8 /* LoginView.swift */,
+				BD984949281087BB00DFC5C8 /* ButtonView.swift */,
+				BD9849452810809B00DFC5C8 /* UserManager.swift */,
+				BD9849432810808100DFC5C8 /* StorageManager.swift */,
 				BD98493928107FF600DFC5C8 /* Assets.xcassets */,
 				BD98493B28107FF600DFC5C8 /* Preview Content */,
 			);
@@ -143,10 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD9849442810808100DFC5C8 /* UserManager.swift in Sources */,
-				BD98493828107FF400DFC5C8 /* ContentView.swift in Sources */,
+				BD9849442810808100DFC5C8 /* StorageManager.swift in Sources */,
+				BD98493828107FF400DFC5C8 /* MainView.swift in Sources */,
+				BD98494A281087BB00DFC5C8 /* ButtonView.swift in Sources */,
 				BD98493628107FF400DFC5C8 /* StateAndDataFlowApp.swift in Sources */,
-				BD9849462810809B00DFC5C8 /* StoregeManager.swift in Sources */,
+				BD9849482810821A00DFC5C8 /* LoginView.swift in Sources */,
+				BD9849462810809B00DFC5C8 /* UserManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

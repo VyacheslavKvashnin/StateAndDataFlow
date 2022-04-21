@@ -9,9 +9,17 @@ import SwiftUI
 
 @main
 struct StateAndDataFlowApp: App {
+    @StateObject var storageManager = StorageManager()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if storageManager.isPresented {
+                MainView()
+                    .environmentObject(storageManager)
+            } else {
+                LoginView()
+                    .environmentObject(storageManager)
+            }
         }
     }
 }
