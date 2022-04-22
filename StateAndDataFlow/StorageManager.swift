@@ -8,6 +8,6 @@
 import SwiftUI
 
 class StorageManager: ObservableObject {
-    @AppStorage("isPresented") var isPresented = false
+    @AppStorage("isPresented") var isPresented = true
     @AppStorage("userName") var userName = ""
 }

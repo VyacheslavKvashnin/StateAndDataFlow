@@ -10,9 +10,13 @@ import SwiftUI
 struct TimerButtonView: View {
     @ObservedObject var timeCounter: TimeCounter
     
+    let titleButton: String
+    let action: () -> Void
+
     var body: some View {
-        Button(action: { timeCounter.startTimer() }) {
-            Text(timeCounter.titleButton)
+        
+        Button(action: action) {
+            Text(titleButton)
                 .padding()
                 .frame(width: 150)
                 .font(.title)
@@ -25,6 +29,6 @@ struct TimerButtonView: View {
 
 struct TimerButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        TimerButtonView(timeCounter: TimeCounter())
+        TimerButtonView(timeCounter: TimeCounter(), titleButton: "", action: {})
     }
 }

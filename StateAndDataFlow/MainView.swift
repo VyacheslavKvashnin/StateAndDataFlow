@@ -23,11 +23,15 @@ struct MainView: View {
                 .font(.largeTitle)
                 .bold()
             
-            TimerButtonView(timeCounter: timeCounter)
+            TimerButtonView(timeCounter: timeCounter, titleButton: timeCounter.titleButton) {
+                timeCounter.startTimer()
+            }
             
             Spacer()
             
-            ButtonView(titleButton: "Log Out", present: false)
+            ButtonView(titleButton: "Log Out") {
+                storageManager.isPresented = false
+            }
         }
         .padding(30)
     }

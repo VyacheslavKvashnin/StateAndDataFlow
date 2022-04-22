@@ -20,13 +20,16 @@ struct LoginView: View {
                     .foregroundColor(storageManager.userName.count <= 2 ? .red : .green)
             }
             
-            ButtonView(titleButton: "Log In", present: true)
+            ButtonView(titleButton: "Log In", action: {
+                storageManager.isPresented = true
+            })
                 .disabled(storageManager.userName.count <= 2 ? true : false)
                
         }
         .padding()
         .onAppear {
             storageManager.userName = ""
+            storageManager.isPresented = false
         }
     }
 }

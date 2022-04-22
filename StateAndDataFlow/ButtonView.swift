@@ -9,12 +9,12 @@ import SwiftUI
 
 struct ButtonView: View {
     @AppStorage("isPresented") var isPresented: Bool?
-    
+
     let titleButton: String
-    let present: Bool
+    let action: () -> Void
     
     var body: some View {
-        Button (action: { isPresented = present }) {
+        Button (action: action) {
             HStack {
                 Image(systemName: "checkmark.circle")
                 Text(titleButton)
@@ -25,6 +25,6 @@ struct ButtonView: View {
 
 struct ButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonView(titleButton: "", present: true)
+        ButtonView(titleButton: "", action: {})
     }
 }
